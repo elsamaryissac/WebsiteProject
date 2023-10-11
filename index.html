@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>..::Welcome to the world of creating Websites::..</title>
+	<link rel="stylesheet" href="style.css">
+<script src="sample.js"></script>
+
+</head>
+<body>
+	<div class="main">
+		<nav>
+
+		<div class="logo">
+		<img src="images/parrot.jpg">
+		</div>
+		
+		<div class="navlinks">
+		<ul>		
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Accessories</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+		</div>
+
+		</nav>
+	<div class ="information">
+		<div class ="overlay">
+		<img src="images/mobile.jpg" class="mobile">
+		<div id="circle">
+			<div class="feature one">
+				<img src="images/laptop.jpg">
+				<div>
+					<h1>Laptop</h1>
+					<p>My Laptop</p>
+				</div>
+			</div>
+			<div class="feature two">
+				<img src="images/mouse.jpg">
+				<div>
+					<h1>Mouse</h1>
+					<p>My Mouse</p>
+				</div>
+			</div>
+			<div class="feature three">
+				<img src="images/keyboad.jpg">
+				<div>
+					<h1>Keyboard</h1>
+					<p>My Keyboard</p>
+				</div>
+			</div>
+			<div class="feature four">
+				<img src="images/printer.jpg">
+				<div>
+					<h1>Printer</h1>
+					<p>My Printer</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="controls">
+		<img src="images/top arrow.jpg" id="upBtn">
+		<h3>Features</h3>
+		<img src="images/bottom arrow.jpg" id="downBtn">
+
+	</div>
+
+	</div>
+
+	<script>
+		var circle=document.getElementById("circle");
+		var upBtn=document.getElementById("upBtn");
+		var downBtn=document.getElementById("downBtn");
+
+		var rotateVal=circle.style.transform;
+		var rotateSum;
+
+		upBtn.onclick = function(){
+
+			rotateSum= rotateVal + "rotate(-90deg)";
+			circle.style.transform = rotateSum;
+			rotateVal = rotateSum;
+		}
+
+		downBtn.onclick = function(){
+
+			rotateSum= rotateVal + "rotate(90deg)";
+			circle.style.transform = rotateSum;
+			rotateVal = rotateSum;
+		}
+	</script>
+</body>
+</html>
