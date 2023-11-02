@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 newsample1
 newsample2
 newsample3
 newsample4
+=======
+newsample
+>>>>>>> parent of 6014e84 (NewSample Modified)
