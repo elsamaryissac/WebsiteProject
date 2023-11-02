@@ -1,1 +1,3 @@
-newsample
+newsample1
+newsample2
+newsample3
